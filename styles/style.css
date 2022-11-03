@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  margin: 1rem 0 3rem;
+}
+
+main {
+  width: 100%;
+}
+
+#picker {
+  background-color: rgb(210, 198, 198);
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 0;
+  flex-wrap: wrap;
+  box-shadow: 1.5px 1.5px 4px .6px rgb(46, 46, 46);
+}
+
+#picker > div:first-of-type {
+  margin-right: 1rem;
+}
+
+#values {
+  margin: auto 0 auto 1rem;
+  width: 35%;
+}
+
+#values > div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+#values p {
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+#values span:not(:last-child){
+  margin-bottom: 1rem;
+}
+
+#color {
+  height: 30px;
+  width: 60px;
+  border: 3px rgba(0, 0, 0, 0.9) solid;
+}
+
+#alert {
+  display: none;
+  position: absolute;
+  width: 100%;
+  line-height: 2rem;
+  text-align: center;
+  bottom: -10%;
+  background-color: rgba(131, 140, 131, 0.481);
+
+}
+
+@media (max-width: 750px) {
+
+  #picker {
+    width: 100%;
+  }
+
+  #picker > div:first-of-type {
+    margin-right: 0;
+  }
+
+  #values {
+    width: 100%;
+    margin: 3rem auto;
+  }
+
+  #values > div {
+    margin: auto;
+    max-width: 70%;
+  }
+}
